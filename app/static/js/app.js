@@ -16,7 +16,7 @@ const NewsList = Vue.component('news-list',{
         <ul class="news__list row cnterline" type ='none' >
           <li class='card mb-1 news__item mr-2 mb-2 col-sm-3' v-for="article in articles">
             <h5 class='card-title'>{{ article.title }} </h5>
-            <img class="art-pic" v-bind:src="article.urlToImage" height="100%" width="100%">
+            <img style="width:100%" v-bind:src="article.urlToImage">
             <p class="card-text text-muted"> {{ article.description}} </p>
           </li>
         </ul>
@@ -32,7 +32,7 @@ const NewsList = Vue.component('news-list',{
     
     data: function(){
       return{
-        articles: [],
+        articles:[],
         searchTerm : ''
       }
     },
