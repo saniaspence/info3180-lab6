@@ -5,3 +5,13 @@ body {
 footer  {
     padding-top: 20px;
 }
+
+.card{
+	border-top-color: lightgreen;
+    border-top-width: 5px;
+  }
+
+  .cnterline{
+  	 vertical-align: top;
+	justify-content: center;
+  }
